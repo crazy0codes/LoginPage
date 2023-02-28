@@ -16,14 +16,14 @@
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="register">
                 <div class="introduction">
                     <h4>Hey Hello! <span>&#128075;</span> </h4>
                 </div>
                 <hr>
                 <form>
                     <label for="femail">Email</label>
-                    <input type="email" name="femail" placeholder="example@gamil.com">
+                    <input type="email" name="femail" placeholder="example@gmail.com">
                     <small id="emailError"></small>
                     <br/>
                     <label for="fpassword" >Password</label>
@@ -41,14 +41,34 @@
                             <input type="radio" name="fgender" value="male">
                         </div>
                         <div class="genderClass">
-                            <label for="fgender">other</label>
+                            <label for="fgender">Other</label>
                             <input type="radio" name="fgender" value="male">
                         </div>
                     </div>
+                    <small id="genderError"></small>
                     <br/>
                     <button type="submit">sign up</button>
                     <br/>
                     <small>Already have an account <a href="#">login</a></small>
+                </form>
+            </div>
+            <div class="loginNow block">
+                <div class="introduction">
+                    <h4>welcome Back! <span>&#128075;</span> </h4>
+                </div>
+                <hr>
+                <form>
+                    <label for="femail">Email</label>
+                    <input type="email" name="femail" placeholder="example@gmail.com">
+                    <small id="emailError"></small>
+                    <br/>
+                    <label for="fpassword" >Password</label>
+                    <input type="password" name="fpassword" placeholder="password">
+                    <small id="passwordError"></small>
+                    <br/>
+                    <button type="submit">login</button>
+                    <br/>
+                    <small>Register now <a href="#">register</a></small>
                 </form>
             </div>
         </section>

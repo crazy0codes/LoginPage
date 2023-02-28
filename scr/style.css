@@ -59,7 +59,7 @@ section:nth-child(2) {
 .introduction {
     font-family:var(--fontFamily);
 }
-.container {
+.register,.loginNow{
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -109,4 +109,11 @@ button {
     background-color: #040454;
     color: white;
     cursor: pointer;
+}
+
+.block {
+    display: none;
+}
+.loginNow {
+    min-height: 300px;
 }
