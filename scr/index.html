@@ -23,13 +23,36 @@
                 <hr>
                 <form>
                     <label for="femail">Email</label>
-                    <input type="email" name="femail" placeholder="example@gamil.com" required><br/>
+                    <input type="email" name="femail" placeholder="example@gamil.com">
+                    <small id="emailError"></small>
+                    <br/>
                     <label for="fpassword" >Password</label>
-                    <input type="password" name="fpassword" placeholder="password"><br/>
+                    <input type="password" name="fpassword" placeholder="password">
+                    <small id="passwordError"></small>
+                    <br/>
+                    <label for="fgender">Gender</label>
+                    <div id = "gender">
+                        <div class="genderClass">
+                            <label for="fgender">Male</label>
+                            <input type="radio" name="fgender" value="male">
+                        </div>
+                        <div class="genderClass">
+                            <label for="fgender">Female</label>
+                            <input type="radio" name="fgender" value="male">
+                        </div>
+                        <div class="genderClass">
+                            <label for="fgender">other</label>
+                            <input type="radio" name="fgender" value="male">
+                        </div>
+                    </div>
+                    <br/>
                     <button type="submit">sign up</button>
+                    <br/>
+                    <small>Already have an account <a href="#">login</a></small>
                 </form>
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
