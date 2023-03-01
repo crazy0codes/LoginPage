@@ -10,10 +10,7 @@
 <body>
     <main>
         <section>
-            <div>
-                <h1>MediaTech</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil ea pariatur exercitationem error soluta dolor eos dolores, perferendis dolorum veritatis quos voluptate aperiam libero fuga accusantium quod reprehenderit deleniti atque?</p>
-            </div>
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-teletrabajo_52683-36260.jpg?w=2000">
         </section>
         <section>
 
@@ -25,22 +22,22 @@
                 <hr>
 
                 <!-- New Register Form -->      
-                <form>
+                <form method="post">
 
                     <!-- Email -->
                     <label for="femail">Email</label>
-                    <input type="email" name="femail" placeholder="example@gmail.com" id="newUserName">
+                    <input type="email" name="femail" placeholder="example@gmail.com" id="newUserName" required>
 
                     <!-- Email Error -->
-                    <small id="emailError"></small>
+                    <small class="emailError"></small>
                     <br/>
 
                     <!-- Password -->
                     <label for="fpassword" >Password</label>
-                    <input type="password" name="fpassword" placeholder="password" id="newUserPassword">
+                    <input type="password" name="fpassword" placeholder="password" id="newUserPassword" required>
 
                     <!-- Password Error -->
-                    <small id="passwordError"></small>
+                    <small class="passwordError"></small>
                     <br/>
 
                     <!-- Gender -->
@@ -49,7 +46,7 @@
                     <div id = "gender">
                         <div class="genderClass">
                             <label for="fgender">Male</label>
-                            <input type="radio" name="fgender" value="male" class="newUserGender">
+                            <input type="radio" name="fgender" value="male" class="newUserGender" required>
                         </div>
                         <div class="genderClass">
                             <label for="fgender">Female</label>
@@ -70,7 +67,7 @@
                     <br/>
 
                     <!-- link to OldUser -->
-                    <small>Already have an account <a href="#">login</a></small>
+                    <small>Already have an account <a href="#" id="login">login</a></small>
                 </form>
                 <!-- End of NewUser form -->
 
@@ -87,22 +84,22 @@
                 <hr/>
 
                 <!-- Login form for OldUser -->
-                <form>
+                <form method="post">
 
                     <!-- Eamil -->
                     <label for="femail">Email</label>
-                    <input type="email" name="femail" placeholder="example@gmail.com">
+                    <input type="email" name="femail" placeholder="example@gmail.com" id="oldUserEmail" required>
 
                     <!-- Email Error -->
-                    <small id="emailError"></small>
+                    <small class="emailError"></small>
                     <br/>
 
                     <!-- Password -->
                     <label for="fpassword" >Password</label>
-                    <input type="password" name="fpassword" placeholder="password">
+                    <input type="password" name="fpassword" placeholder="password" id="oldUserPassword" required>
 
                     <!-- Password Error -->
-                    <small id="passwordError"></small>
+                    <small class="passwordError"></small>
                     <br/>
 
                     <!-- Login Button -->
@@ -110,7 +107,7 @@
                     <br/>
 
                     <!-- Link to register form -->
-                    <small>Register now <a href="#">register</a></small>
+                    <small>Register now <a href="#" id="register">register</a></small>
                 </form>
                 <!-- End of the Login form -->
 
