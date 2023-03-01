@@ -16,61 +16,107 @@
             </div>
         </section>
         <section>
+
+            <!-- Div for NewUser Start  -->
             <div class="register">
                 <div class="introduction">
                     <h4>Hey Hello! <span>&#128075;</span> </h4>
                 </div>
                 <hr>
+
+                <!-- New Register Form -->      
                 <form>
+
+                    <!-- Email -->
                     <label for="femail">Email</label>
-                    <input type="email" name="femail" placeholder="example@gmail.com">
+                    <input type="email" name="femail" placeholder="example@gmail.com" id="newUserName">
+
+                    <!-- Email Error -->
                     <small id="emailError"></small>
                     <br/>
+
+                    <!-- Password -->
                     <label for="fpassword" >Password</label>
-                    <input type="password" name="fpassword" placeholder="password">
+                    <input type="password" name="fpassword" placeholder="password" id="newUserPassword">
+
+                    <!-- Password Error -->
                     <small id="passwordError"></small>
                     <br/>
+
+                    <!-- Gender -->
+
                     <label for="fgender">Gender</label>
                     <div id = "gender">
                         <div class="genderClass">
                             <label for="fgender">Male</label>
-                            <input type="radio" name="fgender" value="male">
+                            <input type="radio" name="fgender" value="male" class="newUserGender">
                         </div>
                         <div class="genderClass">
                             <label for="fgender">Female</label>
-                            <input type="radio" name="fgender" value="male">
+                            <input type="radio" name="fgender" value="male" class="newUserGender">
                         </div>
                         <div class="genderClass">
                             <label for="fgender">Other</label>
-                            <input type="radio" name="fgender" value="male">
+                            <input type="radio" name="fgender" value="male" class="newUserGender">
                         </div>
                     </div>
+
+                    <!-- Gender Error -->
                     <small id="genderError"></small>
                     <br/>
+
+                    <!-- SignUP Button -->
                     <button type="submit">sign up</button>
                     <br/>
+
+                    <!-- link to OldUser -->
                     <small>Already have an account <a href="#">login</a></small>
                 </form>
+                <!-- End of NewUser form -->
+
             </div>
+            <!-- Div for NewUser End -->
+
+
+
+            <!-- Div for OldUser Start-->
             <div class="loginNow block">
                 <div class="introduction">
                     <h4>welcome Back! <span>&#128075;</span> </h4>
                 </div>
-                <hr>
+                <hr/>
+
+                <!-- Login form for OldUser -->
                 <form>
+
+                    <!-- Eamil -->
                     <label for="femail">Email</label>
                     <input type="email" name="femail" placeholder="example@gmail.com">
+
+                    <!-- Email Error -->
                     <small id="emailError"></small>
                     <br/>
+
+                    <!-- Password -->
                     <label for="fpassword" >Password</label>
                     <input type="password" name="fpassword" placeholder="password">
+
+                    <!-- Password Error -->
                     <small id="passwordError"></small>
                     <br/>
+
+                    <!-- Login Button -->
                     <button type="submit">login</button>
                     <br/>
+
+                    <!-- Link to register form -->
                     <small>Register now <a href="#">register</a></small>
                 </form>
+                <!-- End of the Login form -->
+
             </div>
+            <!-- Div for OldUser End -->
+
         </section>
     </main>
     <script src="index.js"></script>
